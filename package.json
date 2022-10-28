@@ -1,22 +1,23 @@
 {
   "name": "tmdb",
   "version": "0.1.0",
+  "description": "Pagina para visualizar diferentes datos de peliculas y programas de television ",
+  "author": "Rafael Mojica",
+  "license": "ISC",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently 'npm run server' 'npm run client'",
+    "server": "nodemon api/server.js",
+    "client": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "postinstall": "createdb TMDB"
   },
+  "proxy": "http://localhost:8080",
+  "keywords": [
+    "peliculas",
+    "television",
+    "series"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -34,5 +35,30 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.6",
+    "axios": "^1.1.3",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-redux": "^8.0.4",
+    "react-router": "^6.4.2",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "sass": "^1.55.0",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20",
+    "volleyball": "^1.5.1"
   }
 }

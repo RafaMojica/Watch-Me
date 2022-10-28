@@ -1,0 +1,19 @@
+{
+  "hostname": "localhost",
+  "port": 8080,
+
+  "DATABASE": {
+    "NAME": "TMDB",
+    "TYPE": "postgres"
+  },
+
+  "API": {
+    "KEY": "485a02ce3eaa01e4a4b6bc60216a33c8",
+    "URL": "https://api.themoviedb.org/3",
+    "URL_IMG": "https://image.tmdb.org/t/p"
+  },
+  
+  "AUTH": {
+    "SECRET": "AUTH_TMDB"
+  }
+}

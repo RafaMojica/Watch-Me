@@ -1,0 +1,18 @@
+.search_box {
+  position: relative;
+}
+
+.search_button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.search_input {
+  height: 40px;
+  border-radius: 12px;
+  padding: 5px 50px 5px 10px;
+}

@@ -1,0 +1,36 @@
+.navbar_container {
+  background: $navbar_background;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: $navbar_box-shadow;
+  font-weight: bold;
+}
+
+.navbar_menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0px 5rem;
+    align-items: center;
+  }
+  li {
+    font-size: 1.1rem;
+    padding-left: 3.5rem;
+  }
+  span {
+    color: rgb(146, 230, 205);
+  }
+  a{
+    color: $letter;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $navbar_ancor_hover;
+  }
+}
